@@ -1,0 +1,76 @@
+# Ignore bundler config
+/.bundle
+
+# Ignore the default SQLite database.
+/db/*.sqlite3
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+
+# Ignore documentation that can be auto-gen'd
+/doc/app/*
+
+# OS X Junk
+.DS_Store?
+ehthumbs.db
+Icon?
+Thumbs.db
+.DS_Store
+profile
+.svn
+.sass-cache/*
+.sass-cache
+
+
+# XCode
+*.xcodeproj/*.pbxuser
+*.xcodeproj/*.perspectivev3
+*.xcodeproj/*.mode1v3
+*.xcodeproj/*.tm_build_errors
+*.mode1v3
+*.mode2v3
+*.pbxuser
+*.perspective
+*.perspectivev3
+*.pyc
+*~.nib/
+*/build/*
+
+
+# XC4 #
+*.xcuserstate
+project.xcworkspace/
+xcuserdata/
+*/UserInterfaceState.xcuserstate
+*/Breakpoints.xcbkptlist
+
+build/
+
+*.pbxuser
+*.perspective
+*.perspectivev3
+
+xcuserdata
+*/xcuserdata/*
+.xcodeproj/
+
+!*.xcodeproj/project.pbxproj
+!default.pbxuser
+
+# Java Related
+project.properties
+bin/
+gen/
+out/
+target/
+proguard.cfg
+.~lock*
+*.iml
+.idea/
+*.iws
+*.ipr
+
+# Eclipse
+android/.classpath
+android/.project
