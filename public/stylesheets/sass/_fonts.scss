@@ -1,0 +1,100 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700);
+
+// General fonts
+a{
+	color: #3BAFDA;
+	text-decoration: none;
+	&:hover{
+		color: #4FC1E9;
+		text-decoration: underline;
+	}
+}
+
+p{
+	line-height: 24px;
+	margin: 0 0 10px 0;
+	color: #333;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 17px;
+}
+
+// Header fonts
+
+.left h1{
+	color: #333;
+	font-family: 'Oswald', sans-serif;
+	font-size: 28px;
+	font-weight: 300;
+}
+
+.left h2{
+	color: #333;
+	margin: 0 0 10px 0;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 24px;
+}
+
+.left h3{
+	color: #333;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 18px;
+}
+
+// Main section fonts
+
+.right h2{
+	margin: 0 0 5px 0;
+	padding: 0 0 0 4px;
+	color: #333;
+	font-family: 'Oswald', sans-serif;
+	font-size: 28px;
+	font-weight: 300;
+}
+
+.right h3{
+	color: #333;
+	margin: 0 0 20px 0;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 16px;
+	font-style: italic;
+}
+
+.right li:nth-child(1) h2{
+	border-left: 4px solid $green;
+}
+
+.right li:nth-child(2) h2{
+	border-left: 4px solid $pink;
+}
+
+.right li:nth-child(3) h2{
+	border-left: 4px solid $blue;
+}
+
+.right li:nth-child(4) h2{
+	border-left: 4px solid $yellow;
+}
+
+.right li:nth-child(5) h2{
+	border-left: 4px solid $purple;
+}
+
+// Contact address
+address p{
+	color: #333;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 17px;
+	&:nth-child(2), &:nth-child(3), &:nth-child(4){
+		margin: 0;
+	}
+}
+
+// Contact form
+.ninja-forms-required-items,
+.contact-form label, .contact-form input, .contact-form textarea{
+	color: #333;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 17px;
+	font-weight: 400 !important;
+}

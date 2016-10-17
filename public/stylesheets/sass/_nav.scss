@@ -1,0 +1,147 @@
+// Main nav
+ul.main{
+  list-style: none;
+  float: left;
+  width: 100%;
+  margin: 20px 0 0 0;
+  padding: 0;
+  li{
+    float: left;
+    width: 100%;
+    &:nth-child(1) a{
+      border-color: $green;
+      &:before{
+        background-color: $green;
+      }
+      &:after{
+        background-color: $darkGreen;
+      }
+    }
+    &:nth-child(2) a{
+      border-color: $pink;
+      &:before{
+        background-color: $pink;
+      }
+      &:after{
+        background-color: $darkPink;
+      }
+    }
+    &:nth-child(3) a{
+      border-color: $blue;
+      &:before{
+        background-color: $blue;
+      }
+      &:after{
+        background-color: $darkBlue;
+      }
+    }
+    &:nth-child(4) a{
+      border-color: $yellow;
+      &:before{
+        background-color: $yellow;
+      }
+      &:after{
+        background-color: $darkYellow;
+      }
+    }
+    &:nth-child(5) a{
+      border-color: $purple;
+      &:before{
+        background-color: $purple;
+      }
+      &:after{
+        background-color: $darkPurple;
+      }
+    }
+    a{
+      float: left;
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      margin: 0 0 5px 0;
+      padding: 0 10px 0 35px;
+      background-color: #fff;
+      border-bottom: 4px solid;
+      color: #333;
+      font-family: 'Oswald', sans-serif;
+      font-size: 17px;
+      font-weight: 300;
+      text-decoration: none;
+      text-indent: 0;
+      position: relative;
+      transition: 0.5s;
+      span{
+        position: relative;
+        z-index: 1;
+      }
+      &:before{
+        content: '';
+        width: 100%;
+        height: 0%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transition: 0.2s;
+      }
+      &:after{
+        content: '';
+        width: 0;
+        height: 4px;
+        position: absolute;
+        left: 50%;
+        bottom: -4px;
+        transition: 0.4s;
+      }
+      &:hover{
+        color: #fff;
+        text-indent: 5px;
+        svg{
+          fill: #fff;
+        }
+      }
+      &:hover:before{
+        height: 100%;
+      }
+      &:hover:after{
+        width: 100%;
+        left: 0;
+      }
+      svg{
+        width: 20px;
+        height: 20px;
+        margin: -10px 0 0 0;
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        fill: #333;
+        transition: 0.3s;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 720px){
+  ul.main{
+    li:nth-child(2) a span{
+      font-size: 0;
+      &:after{
+        content: 'Projects';
+        font-size: 17px;
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 590px){
+  ul.main{
+    li{
+      &:nth-child(2) a span:after{ font-size: 0; }
+      a{ font-size: 0; }
+    }
+    svg{
+      margin-left: -10px !important;
+      left: 50% !important;
+    }
+  }
+}

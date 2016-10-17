@@ -1,3 +1,56 @@
-body{
+*{ margin: 0; padding: 0; box-sizing: border-box; }
 
+body{
+	background-color: #eee;
+}
+
+.clearfix{ clear: both; }
+
+.wrapper{
+  float: left;
+  width: 100%;
+}
+
+.hammer-container{
+  width: 1080px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.left{
+  float: left;
+  width: 260px;
+  padding: 20px 20px 20px 0;
+}
+
+.fixed-nav{
+  float: left;
+  width: 240px;
+  position: fixed;
+}
+
+.right{
+  float: none;
+  width: auto;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #fff;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 1100px){
+  .hammer-container{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 880px){
+  .left{
+    width: 220px;
+  }
+  .fixed-nav{
+    width: 200px;
+  }
 }

@@ -1,0 +1,52 @@
+.btn{
+	float: left;
+	padding: 8px 20px;
+	color: #fff;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 17px;
+	font-weight: 100;
+	text-decoration: none;
+	position: relative;
+	transition: 0.3s;
+	// Horizontal lines
+	&:before, &:after{
+		content: '';
+		width: 0;
+		height: 2px;
+		position: absolute;
+		left: 50%;
+		transition: 0.6s;
+	}
+	&:before{ top: 0;	}
+	&:after{ bottom: 0;	}
+	// Vertical lines
+	span:before, span:after{
+		content: '';
+		width: 2px;
+		height: 0;
+		position: absolute;
+		top: 50%;
+		transition: 0.6s;
+	}
+	span:before{ left: 0; }
+	span:after{ right: 0; }
+	&.codepen{
+		background-color: $darkYellow;
+		&:before, &:after, span:before, span:after{
+			background-color: $darkYellow;
+		}
+	}
+	&.projects{
+		background-color: $darkPink;
+		&:before, &:after, span:before, span:after{
+			background-color: $darkPink;
+		}
+	}
+	&:hover{
+		color: #333;
+		background-color: transparent;
+		text-decoration: none;
+		&:before, &:after{ width: 100%; left: 0; }
+		span:before, span:after{ height: 100%; top: 0; }
+	}
+}
