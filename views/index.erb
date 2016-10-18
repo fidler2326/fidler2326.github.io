@@ -320,8 +320,19 @@
 
               <div class="flex-grid">
                 <div class="contact-form">
-                  <?php echo do_shortcode('[ninja_forms id=1]'); ?>
-                  <div class="clearfix"></div>
+                  <div id='contact-box' class="group">
+                    <div class="span6 clear">
+                      <form action="/" method="post" class="well">
+                        <label for="name">Your Name:</label>
+                        <input type="text" name="name" class="span4" placeholder="John Smith...">
+                        <label for="email">Your email address:</label>
+                        <input type="text" name="email" class="span4" placeholder="email@example.com">
+                        <label for="to">Your message:</label>
+                        <textarea name="message" cols='30' rows="10"></textarea><br>
+                        <button type="submit" class="btn" value="Send">Submit</button>
+                      </form>
+                    </div>
+                  </div>
                 </div>
                 <address>
                   <p>Adam Fidler</p>
