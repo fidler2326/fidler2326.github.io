@@ -38,7 +38,7 @@ def configure_pony
       :password             => ENV['Yewaka170!'],
       :authentication       => :plain,
       :enable_starttls_auto => true,
-      :domain               => 'localhost'
+      :domain               => 'heroku.com'
     }
   }
 end
