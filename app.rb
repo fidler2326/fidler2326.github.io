@@ -21,7 +21,7 @@ post '/' do
       :subject =>"#{name} has contacted you",
       :body => "#{message}",
     )
-    redirect '/success'
+    redirect '/'
   rescue
     @exception = $!
     erb :error
