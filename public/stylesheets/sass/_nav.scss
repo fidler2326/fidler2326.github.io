@@ -129,7 +129,7 @@ ul.main{
   }
 }
 
-@media only screen and (max-width: 720px){
+@media only screen and (max-width: 740px){
   ul.main{
     li:nth-child(2) a span{
       font-size: 0;
@@ -138,6 +138,9 @@ ul.main{
         font-size: 17px;
         transition: 0.5s;
       }
+    }
+    li:nth-child(6){
+      display: none;
     }
   }
 }
