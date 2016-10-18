@@ -14,7 +14,7 @@ ul.main{
         background-color: $green;
       }
       &:after{
-        background-color: $darkGreen;
+        background-color: darken($green, 10%);
       }
     }
     &:nth-child(2) a{
@@ -23,7 +23,7 @@ ul.main{
         background-color: $pink;
       }
       &:after{
-        background-color: $darkPink;
+        background-color: darken($pink, 10%);
       }
     }
     &:nth-child(3) a{
@@ -32,7 +32,7 @@ ul.main{
         background-color: $blue;
       }
       &:after{
-        background-color: $darkBlue;
+        background-color: darken($blue, 10%);
       }
     }
     &:nth-child(4) a{
@@ -41,7 +41,7 @@ ul.main{
         background-color: $yellow;
       }
       &:after{
-        background-color: $darkYellow;
+        background-color: darken($yellow, 10%);
       }
     }
     &:nth-child(5) a{
@@ -50,7 +50,16 @@ ul.main{
         background-color: $purple;
       }
       &:after{
-        background-color: $darkPurple;
+        background-color: darken($purple, 10%);
+      }
+    }
+    &:nth-child(6) a{
+      border-color: $orange;
+      &:before{
+        background-color: $orange;
+      }
+      &:after{
+        background-color: darken($orange, 10%);
       }
     }
     a{

@@ -31,15 +31,15 @@
 	span:before{ left: 0; }
 	span:after{ right: 0; }
 	&.codepen{
-		background-color: $darkYellow;
+		background-color: darken($yellow, 10%);
 		&:before, &:after, span:before, span:after{
-			background-color: $darkYellow;
+			background-color: darken($yellow, 10%);
 		}
 	}
 	&.projects{
-		background-color: $darkPink;
+		background-color: darken($pink, 10%);
 		&:before, &:after, span:before, span:after{
-			background-color: $darkPink;
+			background-color: darken($pink, 10%);
 		}
 	}
 	&:hover{

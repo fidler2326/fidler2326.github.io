@@ -1,4 +1,3 @@
-
 .contact-form{
 	label{
 		float: left; width: 100%;
@@ -17,7 +16,7 @@
 	button{
 		float: left;
 		padding: 10px 20px;
-		background-color: $darkPurple;
+		background-color: darken($purple, 10%);
 		border: 0;
 		color: #fff;
 		font-family: 'Roboto Condensed', sans-serif;
