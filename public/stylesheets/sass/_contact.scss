@@ -1,4 +1,6 @@
 .contact-form{
+	position: relative;
+	z-index: 9;
 	label{
 		float: left; width: 100%;
 		span{ float: left; padding: 0 5px 0 0; }
