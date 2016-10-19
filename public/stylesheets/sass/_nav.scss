@@ -1,12 +1,28 @@
 // Main nav
+nav{
+  // padding: 0 20px;
+  &.active{
+    width: 100%;
+    padding: 0 20px;
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 9;
+  }
+}
 ul.main{
   list-style: none;
-  float: left;
-  width: 100%;
-  margin: 20px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%; max-width: 1080px;
+  margin: 0;
   padding: 0;
+  &.active{
+    position: fixed;
+    top: 0; left: 50%;
+    transform: translateX(-50%);
+    z-index: 9;
+  }
   li{
-    float: left;
     width: 100%;
     &:nth-child(1) a{
       border-color: $green;
@@ -63,12 +79,14 @@ ul.main{
       }
     }
     a{
-      float: left;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: 100%;
       height: 50px;
       line-height: 50px;
       margin: 0 0 5px 0;
-      padding: 0 10px 0 35px;
+      padding: 0 10px;
       background-color: #fff;
       border-bottom: 4px solid;
       color: #333;
@@ -103,7 +121,6 @@ ul.main{
       }
       &:hover{
         color: #fff;
-        text-indent: 5px;
         svg{
           fill: #fff;
         }
@@ -118,10 +135,9 @@ ul.main{
       svg{
         width: 20px;
         height: 20px;
-        margin: -10px 0 0 0;
-        position: absolute;
-        top: 50%;
-        left: 10px;
+        margin: 0 5px 0 0;
+        position: relative;
+        z-index: 1;
         fill: #333;
         transition: 0.3s;
       }

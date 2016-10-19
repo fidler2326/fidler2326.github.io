@@ -1,3 +1,12 @@
+var navPosition = $('nav.main').offset().top;
+$(window).scroll(function () {
+  if ($(window).scrollTop() > navPosition) {
+     $('nav.main,header').addClass('active');
+  } else {
+     $('nav.main,header').removeClass('active');
+  }
+});
+
 function checkWidth() {
 	  var windowsize = $(window).width();
 	  if (windowsize < 720) {
