@@ -1,27 +1,21 @@
 // Main nav
 nav{
-  // padding: 0 20px;
   &.active{
-    width: 100%;
+    width: 100%; max-width: 1080px;
     padding: 0 20px;
     position: fixed;
-    top: 0; left: 0;
+    top: 0; left: 50%;
     z-index: 9;
+    transform: translateX(-50%);
   }
 }
 ul.main{
   list-style: none;
   display: flex;
   justify-content: space-between;
-  width: 100%; max-width: 1080px;
+  width: 100%;
   margin: 0;
   padding: 0;
-  &.active{
-    position: fixed;
-    top: 0; left: 50%;
-    transform: translateX(-50%);
-    z-index: 9;
-  }
   li{
     width: 100%;
     &:nth-child(1) a{
