@@ -1,33 +1,93 @@
 ul.skills{
-	float: left;
-	width: 100%;
-	margin: 10px 0 0 0 !important;
+	margin: 0;
+	padding: 20px !important;
 	li{
 		float: left !important;
-		width: 50%;
-		line-height: 24px;
-		padding: 0 10px 0 15px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 50%; min-height: 25px;
+		padding: 10px 0 10px 40px;
+		background-position: left center;
+		background-repeat: no-repeat;
+		background-size: auto 25px;
 		color: #333;
 		font-family: 'Roboto Condensed', sans-serif;
-		font-size: 17px;
-		position: relative;
-		&:before{
-			content: '';
-			width: 5px;
-			height: 5px;
-			margin: -2.5px 0 0 0;
-			background-color: #48CFAD;
-			border-radius: 100%;
-			position: absolute;
-			top: 50%;
-			left: 0;
+		&:nth-child(1){
+			background-image: url(../images/icon_html.png);
+		}
+		&:nth-child(2){
+			background-image: url(../images/icon_ruby.png);
+		}
+		&:nth-child(3){
+			background-image: url(../images/icon_css.png);
+		}
+		&:nth-child(4){
+			background-image: url(../images/icon_js.png);
+		}
+		&:nth-child(5){
+			background-image: url(../images/icon_angular.png);
+		}
+		&:nth-child(6){
+			background-image: url(../images/icon_wordpress.png);
+		}
+		&:nth-child(7){
+			background-image: url(../images/icon_craft.png);
+		}
+		&:nth-child(8){
+			background-image: url(../images/icon_chrome.png);
+		}
+		&:nth-child(9){
+			background-image: url(../images/icon_photoshop.png);
+		}
+		&:nth-child(10){
+			background-image: url(../images/icon_sketch.png);
+		}
+		&:nth-child(11){
+			background-image: url(../images/icon_canvas.png);
+		}
+		&:nth-child(12){
+			background-image: url(../images/icon_phonegap.png);
+		}
+		&:nth-child(13){
+			background-image: url(../images/icon_email.png);
+		}
+		&:nth-child(14){
+			background-image: url(../images/icon_ie.png);
 		}
 	}
 }
 
-@media only screen and (max-width: 450px){
-	ul.skills{
-		margin-bottom: 10px !important;
-		li{ width: 100%; }
-	}
-}
+// ul.skills{
+// 	float: left;
+// 	width: 100%;
+// 	margin: 10px 0 0 0 !important;
+// 	li{
+// 		float: left !important;
+// 		width: 50%;
+// 		line-height: 24px;
+// 		padding: 0 10px 0 15px;
+// 		color: #333;
+// 		font-family: 'Roboto Condensed', sans-serif;
+// 		font-size: 17px;
+// 		position: relative;
+// 		&:before{
+// 			content: '';
+// 			width: 5px;
+// 			height: 5px;
+// 			margin: -2.5px 0 0 0;
+// 			background-color: #48CFAD;
+// 			border-radius: 100%;
+// 			position: absolute;
+// 			top: 50%;
+// 			left: 0;
+// 		}
+// 	}
+// }
+//
+// @media only screen and (max-width: 450px){
+// 	ul.skills{
+// 		margin-bottom: 10px !important;
+// 		li{ width: 100%; }
+// 	}
+// }
