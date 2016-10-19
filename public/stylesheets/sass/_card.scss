@@ -10,6 +10,7 @@
   width: 50%;
   padding: 20px;
   .card{
+    display: block;
     width: 100%;
     box-shadow: 0 15px 15px rgba(0,0,0,.08);
     transform: translate(0,0);
@@ -22,10 +23,27 @@
     }
     .bottom{
       padding: 15px;
+      .footer{
+        border-top: 1px dotted #ddd;
+        padding: 15px 0 0 0;
+      }
     }
     &:hover{
       box-shadow: 0 30px 30px rgba(0,0,0,.16);
       transform: translate(0,-10px);
+      text-decoration: none;
+    }
+    h3{
+      display: block;
+      margin: 0 0 20px 0;
+      font-family: 'Oswald', sans-serif;
+      font-size: 22px;
+      font-weight: 100;
+      font-style: normal;
+      letter-spacing: 2px;
+    }
+    .link{
+      font-family: 'Roboto Condensed', sans-serif;
     }
   }
 }
