@@ -7,7 +7,7 @@
 
 .card-container{
   display: inline-block;
-  width: 50%;
+  width: 33.33%;
   padding: 20px;
   .card{
     display: block;
@@ -16,7 +16,7 @@
     transform: translate(0,0);
     transition: 0.4s ease;
     .top{
-      min-height: 250px;
+      min-height: 200px;
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -40,7 +40,6 @@
       font-size: 22px;
       font-weight: 100;
       font-style: normal;
-      letter-spacing: 2px;
     }
     .link{
       font-family: 'Roboto Condensed', sans-serif;
