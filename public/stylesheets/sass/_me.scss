@@ -1,6 +1,8 @@
 ul.skills{
+	max-width: 500px;
 	margin: 0;
 	padding: 20px !important;
+	border: 1px dashed #ddd;
 	li{
 		float: left !important;
 		display: flex;
