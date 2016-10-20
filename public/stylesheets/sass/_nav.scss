@@ -1,6 +1,6 @@
 // Main nav
 nav{
-  margin-bottom: -5px;
+  // margin-bottom: -5px;
   &.active{
     width: 100%; max-width: 1080px;
     padding: 0 20px;
@@ -17,6 +17,8 @@ ul.main{
   width: 100%;
   margin: 0;
   padding: 0;
+  position: relative;
+  z-index: 9;
   li{
     width: 100%;
     &:nth-child(1) a{
@@ -131,31 +133,37 @@ ul.main{
   }
 }
 
-@media only screen and (max-width: 740px){
-  ul.main{
-    li:nth-child(2) a span{
-      font-size: 0;
-      &:after{
-        content: 'Projects';
-        font-size: 17px;
-        transition: 0.5s;
-      }
-    }
-    li:nth-child(6){
-      display: none;
-    }
+@media(max-width: $tabletPortrait){
+  span{
+    font-size: 0;
   }
 }
 
-@media only screen and (max-width: 590px){
-  ul.main{
-    li{
-      &:nth-child(2) a span:after{ font-size: 0; }
-      a{ font-size: 0; }
-    }
-    svg{
-      margin-left: -10px !important;
-      left: 50% !important;
-    }
-  }
-}
+// @media only screen and (max-width: 740px){
+//   ul.main{
+//     li:nth-child(2) a span{
+//       font-size: 0;
+//       &:after{
+//         content: 'Projects';
+//         font-size: 17px;
+//         transition: 0.5s;
+//       }
+//     }
+//     li:nth-child(6){
+//       display: none;
+//     }
+//   }
+// }
+//
+// @media only screen and (max-width: 590px){
+//   ul.main{
+//     li{
+//       &:nth-child(2) a span:after{ font-size: 0; }
+//       a{ font-size: 0; }
+//     }
+//     svg{
+//       margin-left: -10px !important;
+//       left: 50% !important;
+//     }
+//   }
+// }

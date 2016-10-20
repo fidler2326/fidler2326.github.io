@@ -33,10 +33,12 @@ body{
   float: none;
   width: auto;
   min-height: 100vh;
+	margin: -5px 0 0 0;
   padding: 20px;
   background-color: #fff;
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
   overflow: hidden;
 }
 
