@@ -1,3 +1,7 @@
+particlesJS.load('particles-js', '/js/particles.json', function() {
+  console.log('callback - particles.js config loaded');
+});
+
 var navPosition = $('nav.main').offset().top;
 $(window).scroll(function () {
   if ($(window).scrollTop() > navPosition) {

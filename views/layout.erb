@@ -10,11 +10,13 @@
 </head>
 <body id="<%= @body_id %>" class="<%= @body_class %>">
   <header>
+    <div id="particles-js"></div>
     <h1>Adam Fidler</h1>
     <h2>Front End Developer</h2>
   </header>
   <%= yield %>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+  <script type="text/javascript" src="/js/particles.js"></script>
   <script type="text/javascript" src="/js/hammer.js"></script>
   <script type="text/javascript" src="/js/application.js"></script>
 </body>
