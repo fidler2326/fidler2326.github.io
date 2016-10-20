@@ -64,15 +64,6 @@ ul.main{
         background-color: darken($purple, 10%);
       }
     }
-    &:nth-child(6) a{
-      border-color: $orange;
-      &:before{
-        background-color: $orange;
-      }
-      &:after{
-        background-color: darken($orange, 10%);
-      }
-    }
     a{
       display: flex;
       align-items: center;
