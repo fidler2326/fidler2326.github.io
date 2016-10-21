@@ -107,18 +107,18 @@ ul.main{
         bottom: -4px;
         transition: 0.4s;
       }
-      &:hover{
+      &:hover,&.active{
         color: #fff;
         svg{
           fill: #fff;
         }
-      }
-      &:hover:before{
-        height: 100%;
-      }
-      &:hover:after{
-        width: 100%;
-        left: 0;
+        &:before{
+          height: 100%;
+        }
+        &:after{
+          width: 100%;
+          left: 0;
+        }
       }
       svg{
         width: 20px;
