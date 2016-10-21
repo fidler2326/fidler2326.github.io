@@ -20,16 +20,57 @@ header{
   }
   h1{
     font-size: 20px;
+    opacity: 0;
+    transition: 1s ease;
+    transition-delay: 0.8s;
+    &.already-visible,
+    &.come-in{
+      opacity: 1;
+    }
   }
   h2{
     font-size: 40px;
     position: relative;
+    span{
+      display: inline-block;
+      position: relative;
+      z-index: 3;
+      opacity: 0;
+      transform: translateY(20px) rotate(180deg);
+      transform-origin: bottom;
+      transition: 0.8s;
+      @for $i from 1 to 20 {
+        &:nth-child(#{$i}) { transition-delay: $i * 0.05s; }
+      }
+    }
+    // Colour underline
     &:after{
       content: '';
       width: calc(100% - 5px); height: 3px;
       background: linear-gradient(to right, rgba(72,207,173,1) 0%,rgba(72,207,173,1) 20%,rgba(236,135,192,1) 20.1%,rgba(236,135,192,1) 40%,rgba(79,193,233,1) 40.1%,rgba(79,193,233,1) 60%,rgba(255,206,84,1) 60.1%,rgba(255,206,84,1) 80%,rgba(172,146,236,1) 80.1%,rgba(172,146,236,1) 100%);
       position: absolute;
       bottom: -5px; left: 0;
+      z-index: 1;
+    }
+    &:before{
+      content: '';
+      width: calc(100%); height: 3px;
+      background-color: #333;
+      position: absolute;
+      bottom: -5px; right: 0;
+      z-index: 2;
+      transition: 1.4s ease-out;
+      transition-delay: 0.3s;
+    }
+    &.already-visible,
+    &.come-in{
+      span{
+        opacity: 1;
+        transform: translateY(0px) rotate(0deg);
+      }
+      &:before{
+        width: calc(0% - 5px);
+      }
     }
   }
   &.active{
