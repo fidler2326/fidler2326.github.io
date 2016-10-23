@@ -3,16 +3,40 @@
   <h2>Contact</h2>
   <h3>- Hi (<a href="mailto:hello@reldif.co.uk">hello@reldif.co.uk</a>)</h3>
 
-  <div class="contact-form">
-    <form action="/" method="post">
-      <label for="name">Your Name:</label>
-      <input type="text" name="name" class="span4" placeholder="John Smith...">
-      <label for="email">Your email address:</label>
-      <input type="text" name="email" class="span4" placeholder="email@example.com">
-      <label for="to">Your message:</label>
-      <textarea name="message" cols='30' rows="10"></textarea><br>
-      <button type="submit" class="btn" value="Send">Submit</button>
-    </form>
+  <div class="flex-container">
+    <div class="contact-form">
+      <form action="/" method="post">
+        <label for="name">Your Name:</label>
+        <input type="text" name="name" class="span4" placeholder="John Smith...">
+        <label for="email">Your email address:</label>
+        <input type="text" name="email" class="span4" placeholder="email@example.com">
+        <label for="to">Your message:</label>
+        <textarea name="message" cols='30' rows="10"></textarea><br>
+        <button type="submit" class="btn" value="Send">Submit</button>
+      </form>
+    </div>
+    <div class="contact-info">
+      <p class="contact-icon">
+        <%= erb :"/icons/_icon_github" %>
+        <a href="http://github.com/fidler2326" target="_blank">Github</a>
+      </p>
+      <p class="contact-icon">
+        <%= erb :"/icons/_icon_codepen" %>
+        <a href="http://codepen.io/adam2326" target="_blank">Codepen</a>
+      </p>
+      <p class="contact-icon">
+        <%= erb :"/icons/_icon_location" %>
+        <a href="#" target="_blank">Bracknell, Berkshire</a>
+      </p>
+      <p class="contact-icon">
+        <%= erb :"/icons/_icon_email" %>
+        <a href="mailto:hello@reldif.co.uk">hello@reldif.co.uk</a>
+      </p>
+      <p class="contact-icon">
+        <%= erb :"/icons/_icon_phone" %>
+        <a href="tel:07986057038">0798 605 7038</a>
+      </p>
+    </div>
   </div>
 </div>
 <div class="clearfix"></div>

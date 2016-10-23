@@ -17,6 +17,10 @@ body{
   margin: 0 auto;
 }
 
+.flex-container{
+	display: flex;
+}
+
 .left{
   float: left;
   width: 260px;

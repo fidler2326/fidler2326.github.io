@@ -1,4 +1,6 @@
 .contact-form{
+	display: inline-block;
+	flex: 0 0 1;
 	position: relative;
 	z-index: 9;
 	label{
@@ -30,6 +32,27 @@
 			color: #fff;
 			background-color: $purple;
 		}
+	}
+}
+
+.contact-info{
+	display: inline-block;
+	width: 360px;
+	padding: 0 0 0 50px;
+	p{
+		display: flex;
+		align-items: center;
+		padding: 8px 0;
+		letter-spacing: 1px;
+	}
+}
+
+.contact-icon{
+	svg{
+		display: inline-block;
+		width: 20px; height: 20px;
+		margin: 0 10px 0 0;
+		fill: #333;
 	}
 }
 
