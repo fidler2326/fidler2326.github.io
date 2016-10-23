@@ -75,5 +75,8 @@ header{
   }
   &.active{
     margin-bottom: 55px;
+    @media(max-width: 740px){
+      margin-bottom: 0;
+    }
   }
 }

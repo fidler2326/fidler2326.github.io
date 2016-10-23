@@ -8,6 +8,13 @@ nav{
     top: 0; left: 50%;
     z-index: 9;
     transform: translateX(-50%);
+    @media(max-width: 740px){
+      padding: 0;
+      position: relative;
+      left: 0;
+      z-index: 9;
+      transform: translateX(0);
+    }
   }
 }
 ul.main{
@@ -88,6 +95,9 @@ ul.main{
       span{
         position: relative;
         z-index: 1;
+        @media(max-width: $tabletPortrait){
+          font-size: 0;
+        }
       }
       &:before{
         content: '';
@@ -133,11 +143,7 @@ ul.main{
   }
 }
 
-@media(max-width: $tabletPortrait){
-  span{
-    font-size: 0;
-  }
-}
+
 
 // @media only screen and (max-width: 740px){
 //   ul.main{

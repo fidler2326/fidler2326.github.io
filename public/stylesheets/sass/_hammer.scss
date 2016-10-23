@@ -55,7 +55,7 @@
     text-align: center;
   }
   .hammer-container{
-    padding: 5px !important;
+    padding: 0 5px 5px 5px !important;
   }
   .left, .right{
     float: left !important;
@@ -76,7 +76,7 @@
     padding: 55px 0 0 0;
     margin-bottom: -60px;
     position: relative;
-    top: -60px;
+    top: -55px;
     z-index: 1;
     .inner{
       padding: 70px 10px 0 10px;
@@ -122,7 +122,10 @@
 }
 
 @media only screen and (max-width: 740px){
-  nav{ width: calc(100% - 2px) !important; }
+  nav{
+    width: calc(100% - 2px) !important;
+
+  }
   ul.main{
     margin: 0 0 0 1px !important;
     li{
