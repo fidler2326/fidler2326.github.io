@@ -1612,6 +1612,9 @@ function Carousel(element)
          var paneHeight = $('li.pane').eq(current_pane).height();
          console.log(paneHeight);
          $('#carousel ul.mobile').css('max-height', paneHeight);
+
+         $('ul.main li a').removeClass('active');
+         $('ul.main li a').eq(current_pane).addClass('active');
        }
 
        $(window).resize(function() {
