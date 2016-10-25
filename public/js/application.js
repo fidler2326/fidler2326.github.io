@@ -72,7 +72,10 @@ function checkWidth() {
 
     $('.jump-to').on('click', function() {
       var selected = $(this).data('section');
-      $('html, body').animate({
+      // $('html, body').animate({
+      //   scrollTop: $('#' + selected).offset().top - 65
+      // }, 1000);
+      $('html,body').stop(true, false).animate({
         scrollTop: $('#' + selected).offset().top - 65
       }, 1000);
     });
