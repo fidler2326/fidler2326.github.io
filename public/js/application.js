@@ -61,8 +61,9 @@ function checkWidth() {
     $('#carousel ul').removeClass('desktop');
     $('#carousel ul').addClass('mobile');
 
+    // Stop page scrolling after window resize
     $('.jump-to').on('click', function() {
-      console.log('yo')
+      $('html,body').stop(true);
       return false;
     });
 
@@ -72,9 +73,6 @@ function checkWidth() {
 
     $('.jump-to').on('click', function() {
       var selected = $(this).data('section');
-      // $('html, body').animate({
-      //   scrollTop: $('#' + selected).offset().top - 65
-      // }, 1000);
       $('html,body').stop(true, false).animate({
         scrollTop: $('#' + selected).offset().top - 65
       }, 1000);
