@@ -1710,3 +1710,6 @@ $('.link4').on('click', function (e)
 
 $('.link5').on('click', function (e)
 { carousel.showPane(4, true); return false; });
+
+$('.link5').on('tap', function (e)
+{ e.gesture.srcEvent.preventDefault() });
