@@ -51,10 +51,6 @@ win.scroll(function(event) {
   });
 });
 
-// Mobile flag
-// -----------
-var mobile;
-
 function checkWidth() {
   var windowsize = $(window).width();
   if (windowsize < 720) {
@@ -67,10 +63,21 @@ function checkWidth() {
       return false;
     });
 
+    // Disable scrollspy
+    // $(window).off('scroll');
+
+    var scrollState = false;
+    scrollSpy(scrollState);
+
   } else {
   	$('#carousel ul').removeClass('mobile');
     $('#carousel ul').addClass('desktop');
 
+    var scrollState = true;
+    scrollSpy(scrollState);
+
+    // Jump to links
+    // -------------
     $('.jump-to').on('click', function() {
       var selected = $(this).data('section');
       $('html,body').stop(true, false).animate({
@@ -81,6 +88,41 @@ function checkWidth() {
   }
 }
 
+// Scrollspy
+// ---------
+function scrollSpy(scrollState) {
+  console.log(scrollState);
+  if (scrollState == true) {
+    var sections = [];
+    var scrolled_id = false;
+    var id = false;
+    var $navBar = $('.scrollspy');
+    var $navLink = $navBar.find('.jump-to');
+
+    $navLink.each(function(){
+      sections.push($($(this).attr('href')));
+    });
+
+    $(window).scroll(function(e){
+      e.preventDefault();
+      var scrollTop = $(this).scrollTop() + ($(window).height() / 3);
+
+      for(var i in sections){
+        var section = sections[i];
+        if(scrollTop > section.offset().top){
+          scrolled_id = section.attr('id');
+        }
+
+        if(scrolled_id !== id){
+          id = scrolled_id;
+          $navLink.removeClass('active');
+          $('a[href="#'+ id + '"]', $navBar).addClass('active');
+        }
+      }
+    });
+  }
+}
+
 $(document).ready(function(){
   checkWidth();
 });
@@ -88,37 +130,4 @@ $(document).ready(function(){
 $(window).resize(function() {
   checkWidth();
   console.log('resize');
-  // window.scrollTo(0,0);
 });
-
-  // Scrollspy
-  // ---------
-  // var sections = [];
-  // var scrolled_id = false;
-  // var id = false;
-  // var $navBar = $('.scrollspy');
-  // var $navLink = $navBar.find('.jump-to');
-  //
-  // $navLink.each(function(){
-  //   sections.push($($(this).attr('href')));
-  // });
-  //
-  // $(window).scroll(function(e){
-  //   e.preventDefault();
-  //   var scrollTop = $(this).scrollTop() + ($(window).height() / 3);
-  //
-  //   for(var i in sections){
-  //     var section = sections[i];
-  //     if(scrollTop > section.offset().top){
-  //       scrolled_id = section.attr('id');
-  //     }
-  //
-  //     if(scrolled_id !== id){
-  //       id = scrolled_id;
-  //       $navLink.removeClass('active');
-  //       $('a[href="#'+ id + '"]', $navBar).addClass('active');
-  //     }
-  //   }
-  // });
-  // Not sure if this is needed
-  // $(window).trigger('scroll');
