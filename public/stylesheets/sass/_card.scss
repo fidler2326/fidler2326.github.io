@@ -12,6 +12,9 @@
   @media(max-width: 868px){
     width: 100%;
   }
+  @media(max-width: 648px){
+    padding: 20px 0;
+  }
   .card{
     display: flex;
     flex-direction: column;
