@@ -19,6 +19,34 @@ body{
 
 .flex-container{
 	display: flex;
+	@media(max-width: 768px){
+		flex-direction: column;
+	}
+}
+
+.unit{
+	display: inline-block;
+	width: auto;
+	&.unit25{
+		flex: 0 0 25%;
+		max-width: 25%;
+	}
+	&.unit50{
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+	&.unit75{
+		flex: 0 0 75%;
+		max-width: 75%;
+	}
+	@media(max-width: 768px){
+		flex: 0 0 100%;
+		max-width: 100%;
+		&.unit25,&.unit50,&.unit75{
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+	}
 }
 
 .left{
