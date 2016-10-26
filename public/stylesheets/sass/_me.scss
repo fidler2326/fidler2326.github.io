@@ -16,7 +16,7 @@ ul.skills{
 	overflow: visible !important;
 	@media(max-width: 828px){
 		order: 1;
-		max-width: 100%;
+		min-width: initial; max-width: 100%;
 		margin: 62px 0 0 0 !important;
 	}
 	&:before{
