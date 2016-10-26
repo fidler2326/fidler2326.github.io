@@ -1342,7 +1342,7 @@ Hammer.gestures.Tap = {
  defaults: {
    tap_max_touchtime : 0,
    tap_max_distance  : 10,
-   tap_always        : false,
+   tap_always        : true,
    doubletap_distance: 20,
    doubletap_interval: 300
  },
@@ -1402,7 +1402,7 @@ Hammer.gestures.Touch = {
    // transforming and dragging.
    // be careful with using this, it can be very annoying for users to be stuck
    // on the page
-   prevent_default    : true,
+   prevent_default    : false,
 
    // disable mouse events, so only touch (or pen!) input triggers events
    prevent_mouseevents: false

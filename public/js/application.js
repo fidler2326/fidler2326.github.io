@@ -131,3 +131,8 @@ $(window).resize(function() {
   checkWidth();
   console.log('resize');
 });
+
+// Fix delay on click events with hammer js
+$(function() {
+  FastClick.attach(document.body);
+});
