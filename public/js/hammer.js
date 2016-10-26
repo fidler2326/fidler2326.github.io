@@ -1402,7 +1402,7 @@ Hammer.gestures.Touch = {
    // transforming and dragging.
    // be careful with using this, it can be very annoying for users to be stuck
    // on the page
-   prevent_default    : false,
+   prevent_default    : true,
 
    // disable mouse events, so only touch (or pen!) input triggers events
    prevent_mouseevents: false
