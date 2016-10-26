@@ -29,7 +29,7 @@ Hammer.defaults = {
  // set to false to disable this
  stop_browser_behavior: {
    // this also triggers onselectstart=false for IE
-   userSelect       : 'none',
+  //  userSelect       : 'none',
    // this makes the element blocking in IE10>, you could experiment with the value
    // see for more options this issue; https://github.com/EightMedia/hammer.js/issues/241
    touchAction      : 'pan-y',
@@ -1710,7 +1710,3 @@ $('.link4').on('click', function (e)
 
 $('.link5').on('click', function (e)
 { carousel.showPane(4, true); return false; });
-
-$('a,input,button').on('click',function(event){
-    event.stopPropagation(); event.preventDefault();
-});
