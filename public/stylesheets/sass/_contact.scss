@@ -14,6 +14,8 @@
 		padding: 5px 10px;
 		border: 1px solid #ccc;
 		border-bottom: 3px solid #ccc;
+		position: relative;
+		z-index: 9;
 		&:focus{ outline: 0; border-color: #ac92ec; }
 	}
 	textarea{ height: 140px !important; }
