@@ -1711,5 +1711,6 @@ $('.link4').on('click', function (e)
 $('.link5').on('click', function (e)
 { carousel.showPane(4, true); return false; });
 
-$('a,input,button').on('tap', function (e)
-{ e.gesture.srcEvent.preventDefault() });
+$('a,input,button').on('click',function(event){
+    event.stopPropagation(); event.preventDefault();
+});
