@@ -46,6 +46,10 @@
 		padding: 8px 0;
 		letter-spacing: 1px;
 	}
+	@media(max-width: 528px){
+		margin: 20px 0 0 0;
+		padding: 0;
+	}
 }
 
 .contact-icon{

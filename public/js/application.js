@@ -129,8 +129,3 @@ $(document).ready(function(){
 $(window).resize(function() {
   checkWidth();
 });
-
-
-$('a').click(function(){
-  console.log($(this));
-})
