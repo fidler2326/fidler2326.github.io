@@ -133,6 +133,6 @@ $(window).resize(function() {
 });
 
 // Fix delay on click events with hammer js
-$(function() {
-  FastClick.attach(document.body);
-});
+// $(function() {
+//   FastClick.attach(document.body);
+// });
