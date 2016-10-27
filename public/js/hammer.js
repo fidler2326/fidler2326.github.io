@@ -756,9 +756,14 @@ var Event = Hammer.event = {
       * mostly used to disable scrolling of the browser
       */
      preventDefault: function() {
-       var srcEvent = this.srcEvent;
-       srcEvent.preventManipulation && srcEvent.preventManipulation();
-       srcEvent.preventDefault && srcEvent.preventDefault();
+      // NOTE: Removed the below 3 lines to fix issue with
+      // not being able to click on link/inputs
+      // -------------------------------------------------
+      //  var srcEvent = this.srcEvent;
+      //  srcEvent.preventManipulation && srcEvent.preventManipulation();
+      //  srcEvent.preventDefault && srcEvent.preventDefault();
+      // ----------------------------------------------------------------
+      // ----------------------------------------------------------------
      },
 
      /**
@@ -1610,7 +1615,7 @@ function Carousel(element)
          $('li.pane').eq(current_pane).addClass('active');
 
          var paneHeight = $('li.pane').eq(current_pane).height();
-         console.log(paneHeight);
+        //  console.log(paneHeight);
          $('#carousel ul.mobile').css('max-height', paneHeight);
 
          $('ul.main li a').removeClass('active');

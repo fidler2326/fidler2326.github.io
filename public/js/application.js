@@ -91,7 +91,6 @@ function checkWidth() {
 // Scrollspy
 // ---------
 function scrollSpy(scrollState) {
-  console.log(scrollState);
   if (scrollState == true) {
     var sections = [];
     var scrolled_id = false;
@@ -129,10 +128,9 @@ $(document).ready(function(){
 
 $(window).resize(function() {
   checkWidth();
-  console.log('resize');
 });
 
-// Fix delay on click events with hammer js
-$(function() {
-  FastClick.attach(document.body);
-});
+
+$('a').click(function(){
+  console.log($(this));
+})
