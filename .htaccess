@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.reldif.co.uk$ [NC]
+RewriteRule ^(.*)$ http://reldif.co.uk/$1 [R=301,L]
