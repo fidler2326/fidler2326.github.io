@@ -3,13 +3,14 @@ require 'sinatra'
 require 'pony'
 require 'sinatra/cacher'
 
-class PortfolioSite < Sinatra::Base
+class Application < Sinatra::Base
   register Sinatra::Cacher
 end
 
 get_cache '/', :tag => 'index' do
   @title = 'Adam Fidler - Front End Developer'
   @body_id = 'home'
+  cache_tag 'index'
   erb :index, :layout => :'layout'
 end
 
