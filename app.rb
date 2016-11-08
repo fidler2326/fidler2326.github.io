@@ -4,6 +4,10 @@ require 'pony'
 
 require 'sinatra/cacher'
 
+require 'uglifier'
+
+Uglifier.new.compile(File.read("application.js"))
+
 class PortfolioSite < Sinatra::Base
   register Sinatra::Cacher
 end
