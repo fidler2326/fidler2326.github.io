@@ -1,16 +1,16 @@
 require 'rubygems'
 require 'sinatra'
 require 'pony'
+
 require 'sinatra/cacher'
 
-class Application < Sinatra::Base
-  register Sinatra::Cacher
+before do
+  cache_control :public, :must_revalidate, :max_age => 60
 end
 
-get_cache '/', :tag => 'index' do
+get '/' do
   @title = 'Adam Fidler - Front End Developer'
   @body_id = 'home'
-  cache_tag 'index'
   erb :index, :layout => :'layout'
 end
 
