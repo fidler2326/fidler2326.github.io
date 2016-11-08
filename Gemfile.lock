@@ -14,6 +14,8 @@ GEM
     pony (1.11)
       mail (>= 2.0)
     rack (1.6.4)
+    rack-cache (1.6.1)
+      rack (>= 0.4)
     rack-protection (1.5.3)
       rack
     sass (3.2.1)
@@ -34,6 +36,7 @@ PLATFORMS
 DEPENDENCIES
   heroku-deflater
   pony
+  rack-cache
   sass (= 3.2.1)
   sinatra
   thin

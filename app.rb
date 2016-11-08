@@ -1,13 +1,16 @@
 require 'rubygems'
+require 'rack/cache'
 require 'sinatra'
 require 'pony'
+
+use Rack::Cache
 
 before do
   cache_control :public, :must_revalidate, :max_age => 60
 end
 
 get '/' do
-  cache_control :public
+  cache_control :public, :max_age => 36000
   @title = 'Adam Fidler - Front End Developer'
   @body_id = 'home'
   erb :index, :layout => :'layout'
