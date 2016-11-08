@@ -2,8 +2,6 @@ require 'rubygems'
 require 'sinatra'
 require 'pony'
 
-require 'sinatra/cacher'
-
 before do
   cache_control :public, :must_revalidate, :max_age => 60
 end
