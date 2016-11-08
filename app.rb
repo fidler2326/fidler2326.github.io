@@ -7,6 +7,7 @@ before do
 end
 
 get '/' do
+  cache_control :public
   @title = 'Adam Fidler - Front End Developer'
   @body_id = 'home'
   erb :index, :layout => :'layout'
