@@ -2,6 +2,14 @@ require 'rubygems'
 require 'sinatra'
 require 'pony'
 
+require 'sinatra/cache'
+
+class PortfolioSite < Sinatra::Base
+  set :root, 'view/index.erb'
+  register(Sinatra::Cache)
+  set :cache_enabled, true
+end
+
 get '/' do
   @title = 'Adam Fidler - Front End Developer'
   @body_id = 'home'
