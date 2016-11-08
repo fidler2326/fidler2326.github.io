@@ -4,6 +4,8 @@ GEM
     daemons (1.2.4)
     eventmachine (1.2.0.1)
     eventmachine (1.2.0.1-x86-mingw32)
+    heroku-deflater (0.6.2)
+      rack (>= 1.4.5)
     mail (2.6.4)
       mime-types (>= 1.16, < 4)
     mime-types (3.1)
@@ -31,6 +33,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  heroku-deflater
   pony
   sass (= 3.2.1)
   sinatra
