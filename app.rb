@@ -2,10 +2,6 @@ require 'rubygems'
 require 'sinatra'
 require 'pony'
 require 'sinatra/cacher'
-require 'uglifier'
-require 'v8'
-
-Uglifier.new.compile(File.read("public/js/application.js"))
 
 class PortfolioSite < Sinatra::Base
   register Sinatra::Cacher
