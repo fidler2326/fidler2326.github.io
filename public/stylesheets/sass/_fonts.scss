@@ -1,5 +1,77 @@
-@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
-@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700);
+// @import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
+// @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700);
+
+@font-face {
+  font-family: 'Oswald Bold';
+  src: url('../fonts/oswald-bold-webfont.woff2') format('woff2'),
+       url('../fonts/oswald-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Oswald Light';
+  src: url('../fonts/oswald-light-webfont.woff2') format('woff2'),
+       url('../fonts/oswald-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Oswald';
+  src: url('../fonts/oswald-regular-webfont.woff2') format('woff2'),
+       url('../fonts/oswald-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed Bold';
+  src: url('../fonts/robotocondensed-bold-webfont.woff2') format('woff2'),
+       url('../fonts/robotocondensed-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed Bold Italic';
+  src: url('../fonts/robotocondensed-bolditalic-webfont.woff2') format('woff2'),
+       url('../fonts/robotocondensed-bolditalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed Italic';
+  src: url('../fonts/robotocondensed-italic-webfont.woff2') format('woff2'),
+       url('../fonts/robotocondensed-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed Light';
+  src: url('../fonts/robotocondensed-light-webfont.woff2') format('woff2'),
+       url('../fonts/robotocondensed-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed Light Italic';
+  src: url('../fonts/robotocondensed-lightitalic-webfont.woff2') format('woff2'),
+       url('../fonts/robotocondensed-lightitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('../fonts/robotocondensed-regular-webfont.woff2') format('woff2'),
+       url('../fonts/robotocondensed-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 // General fonts
 a{
@@ -23,7 +95,7 @@ p{
 
 .left h1{
 	color: #333;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Oswald Light', sans-serif;
 	font-size: 28px;
 	font-weight: 400;
 }
@@ -49,7 +121,7 @@ p{
 	margin: 0 0 5px 0;
 	padding: 0 0 0 4px;
 	color: #333;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Oswald Light', sans-serif;
 	font-size: 28px;
 	font-weight: 300;
 }
