@@ -3,10 +3,10 @@ require 'sinatra'
 require 'pony'
 
 get '/' do
+  cache_control :public, max_age: 60 * 60 * 24 * 365
   @title = 'Adam Fidler - Front End Developer'
   @body_id = 'home'
   erb :index, :layout => :'layout'
-  set :static_cache_control, [:public, :max_age => 300]
 end
 
 post '/' do
