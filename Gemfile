@@ -4,5 +4,4 @@ gem 'sinatra'
 gem 'thin'
 gem 'sass', '3.2.1'
 gem 'pony'
-gem 'rack-cache'
 gem 'heroku-deflater', :group => :production
