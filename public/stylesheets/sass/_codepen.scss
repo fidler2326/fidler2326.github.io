@@ -4,12 +4,10 @@
 		width: 33.3%;
 		margin: 0 0 20px 0;
 		padding: 10px;
-		background-color: red;
 		.inner{
 			float: left;
 			width: 100%;
 			padding: 10px;
-			background-color: blue;
 		}
 	}
 }
@@ -26,8 +24,7 @@
 }
 
 .equalHMR {
-	width: 32%;
-	margin-bottom: 2%;
+	width: 33.33%;
 	&.eq {
 		padding: 10px;
 	}
@@ -42,7 +39,7 @@
 }
 
 .eq:nth-of-type(odd) {
-	background: #eee;
+	background: #ddd;
 }
 
 .eq:nth-of-type(even) {
