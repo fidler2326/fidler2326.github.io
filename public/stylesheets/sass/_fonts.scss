@@ -115,12 +115,25 @@ p{
 // Main section fonts
 
 .right h2{
-	margin: 0 0 5px 0;
-	padding: 0 0 0 4px;
+	// margin: 0 0 5px 0;
+	// padding: 0 0 0 4px;
+  padding: 2px 15px;
 	color: #333;
 	font-family: 'Oswald Light', sans-serif;
 	font-size: 28px;
 	font-weight: 300;
+  small{
+    display: block;
+    color: #333;
+  	// margin: 0 0 20px 0;
+  	font-family: 'Roboto Condensed', sans-serif;
+  	font-size: 16px;
+  	font-style: italic;
+  	font-weight: 100;
+  }
+  &:nth-of-type(1){
+    // background: linear-gradient(to right, rgba($greyLight,1) 0%,rgba($greyLight,1) 50%,rgba($greyLight,0.9) 50.1%,rgba($greyLight,0.9) 60%,rgba($greyLight,0.8) 60.1%,rgba($greyLight,0.8) 70%,rgba($greyLight,0.7) 70.1%,rgba($greyLight,0.7) 80%,rgba($greyLight,0.6) 80.1%,rgba($greyLight,0.6) 90%,rgba($greyLight,0.5) 90.1%,rgba($greyLight,0.5) 100%);
+  }
 }
 
 .right h3{
@@ -169,4 +182,26 @@ address p{
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 17px;
 	font-weight: 400 !important;
+}
+
+.label{
+  padding: 3px 6px;
+  background-color: #ac92ec;
+  position: absolute;
+  top: 0; left: 50%;
+  z-index: 9;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  h2{
+    margin: 0; padding: 0;
+    border: 0 !important;
+    color: #fff;
+    font-size: 16px;
+  }
+  h3{
+    margin: 0;
+    color: #fff;
+    font-size: 12px;
+  }
+  a{ color: #fff; }
 }

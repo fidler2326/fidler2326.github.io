@@ -3,12 +3,14 @@
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
+
 }
 
 .card-container{
   display: inline-block;
-  width: 33.33%;
-  padding: 20px;
+  width: 31%;
+  padding: 40px 0 20px 0;
+  background-color: #fff;
   @media(max-width: 868px){
     width: 100%;
   }
