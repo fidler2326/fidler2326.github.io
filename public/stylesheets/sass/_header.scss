@@ -91,7 +91,7 @@ header{
   }
   &.active{
     margin-bottom: 55px;
-    @media(max-width: 740px){
+    @media(max-width: $mobileLarge){
       margin-bottom: 0;
     }
   }

@@ -36,7 +36,7 @@ table{
 	}
 }
 
-@media only screen and (max-width: 740px){
+@media only screen and (max-width: $mobileLarge){
 	table{
 		margin-bottom: 0;
 	}

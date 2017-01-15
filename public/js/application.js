@@ -53,7 +53,7 @@ win.scroll(function(event) {
 
 function checkWidth() {
   var windowsize = $(window).width();
-  if (windowsize < 720) {
+  if (windowsize < 678) {
     $('#carousel ul').removeClass('desktop');
     $('#carousel ul').addClass('mobile');
 

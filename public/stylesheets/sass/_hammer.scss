@@ -52,7 +52,7 @@
   }
 }
 
-@media only screen and (max-width: 740px){
+@media only screen and (max-width: $mobileLarge){
   header{
     width: 100%;
     margin: 0 0 5px 0;
@@ -126,7 +126,7 @@
   }
 }
 
-@media only screen and (max-width: 740px){
+@media only screen and (max-width: $mobileLarge){
   nav{
     width: calc(100% - 2px) !important;
 
