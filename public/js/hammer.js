@@ -1588,6 +1588,7 @@ function Carousel(element)
                $(this).width(pane_width);
            });
            container.width(pane_width*pane_count);
+           mySuperAmazingFunctionToAddClassToTheCurrentPaneAndAjustTheHeightOfThePane();
        };
 
 
