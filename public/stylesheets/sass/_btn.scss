@@ -1,242 +1,49 @@
 .btn{
-	float: left;
-	padding: 8px 20px;
-	color: #fff;
-	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 17px;
-	font-weight: 100;
-	text-decoration: none;
-	position: relative;
-	transition: 0.3s;
-	// Horizontal lines
-	&:before, &:after{
-		content: '';
-		width: 0;
-		height: 2px;
-		position: absolute;
-		left: 50%;
-		transition: 0.6s;
-	}
-	&:before{ top: 0;	}
-	&:after{ bottom: 0;	}
-	// Vertical lines
-	span:before, span:after{
-		content: '';
-		width: 2px;
-		height: 0;
-		position: absolute;
-		top: 50%;
-		transition: 0.6s;
-	}
-	span:before{ left: 0; }
-	span:after{ right: 0; }
-	&.codepen{
-		background-color: darken($yellow, 10%);
-		&:before, &:after, span:before, span:after{
-			background-color: darken($yellow, 10%);
-		}
-	}
-	&.projects{
-		background-color: darken($pink, 10%);
-		&:before, &:after, span:before, span:after{
-			background-color: darken($pink, 10%);
-		}
-	}
-	&:hover{
-		color: #333;
-		background-color: transparent;
-		text-decoration: none;
-		&:before, &:after{ width: 100%; left: 0; }
-		span:before, span:after{ height: 100%; top: 0; }
-	}
-}
-
-.btn-floating{
-	width: 200px;
-	height: 40px;
-	line-height: 40px;
-	margin: 30px 0 20px -100px;
+	margin: 5px 0 0 0;
+	font-size: 12px;
+	padding: 5px 22px;
+	background-color: transparent;
+	border: 2px solid #fff;
+	border-radius: 25px;
 	color: #fff;
 	font-family: 'Oswald Light', sans-serif;
-	font-size: 18px;
-	font-weight: 300;
+	text-transform: uppercase;
 	text-decoration: none;
-	text-align: center;
-	display: inline-block;
-  position: relative;
-  left: 50%;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: -webkit-transform;
-  transition-property: transform;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transform: translateY(-6px);
-  -ms-transform: translateY(-6px);
-  transform: translateY(-6px);
-  -webkit-animation-name: hover;
-  animation-name: hover;
-  -webkit-animation-duration: 1.5s;
-  animation-duration: 1.5s;
-  -webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-  animation-direction: alternate;
-  &:before{
-  	pointer-events: none;
-	  position: absolute;
-	  z-index: -1;
-	  content: '';
-	  top: 100%;
-	  left: 5%;
-	  height: 10px;
-	  width: 90%;
-	  opacity: 0;
-	  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
-	  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
-	  -webkit-transition-duration: 0.3s;
-	  transition-duration: 0.3s;
-	  -webkit-transition-property: -webkit-transform, opacity;
-	  transition-property: transform, opacity;
-	  opacity: .4;
-	  -webkit-transform: translateY(6px);
-	  -ms-transform: translateY(6px);
-	  transform: translateY(6px);
-	  -webkit-animation-name: hover-shadow;
-	  animation-name: hover-shadow;
-	  -webkit-animation-duration: 1.5s;
-	  animation-duration: 1.5s;
-	  -webkit-animation-delay: .3s;
-	  animation-delay: .3s;
-	  -webkit-animation-timing-function: linear;
-	  animation-timing-function: linear;
-	  -webkit-animation-iteration-count: infinite;
-	  animation-iteration-count: infinite;
-	  -webkit-animation-direction: alternate;
-	  animation-direction: alternate;
-  }
+	letter-spacing: 1px;
+	cursor: pointer;
 	&:hover{
-		color: #fff;
 		text-decoration: none;
 	}
-	&.codepen{
-		background-color: darken($yellow, 10%);
+	&.dark{
+		color: $grey;
+		border-color: $grey;
 		&:hover{
+			color: #fff;
+			background-color: $grey;
+		}
+	}
+	&.purple{
+		color: $grey;
+		border-color: $purple;
+		&:hover{
+			color: #fff;
+			background-color: $purple;
+		}
+	}
+	&.yellow{
+		color: $grey;
+		border-color: $yellow;
+		&:hover{
+			color: #fff;
 			background-color: $yellow;
 		}
 	}
-}
-
-@media only screen and (max-width: 520px){
-  .btn-floating{
-    width: 100%;
-    margin: 20px 0 0 0;
-    left: 0;
-    -o-transition-property: none !important;
-    -moz-transition-property: none !important;
-    -ms-transition-property: none !important;
-    -webkit-transition-property: none !important;
-    transition-property: none !important;
-    -o-transform: none !important;
-    -moz-transform: none !important;
-    -ms-transform: none !important;
-    -webkit-transform: none !important;
-    transform: none !important;
-    -webkit-animation: none !important;
-    -moz-animation: none !important;
-    -o-animation: none !important;
-    -ms-animation: none !important;
-    animation: none !important;
-    &.me{ display: none; }
-    &:before{ display: none; }
-  }
-}
-
-@keyframes hover {
-  50% {
-    -webkit-transform: translateY(-3px);
-    -ms-transform: translateY(-3px);
-    transform: translateY(-3px);
-  }
-
-  100% {
-    -webkit-transform: translateY(-6px);
-    -ms-transform: translateY(-6px);
-    transform: translateY(-6px);
-  }
-}
-
-@-webkit-keyframes hover-shadow {
-  0% {
-    -webkit-transform: translateY(6px);
-    transform: translateY(6px);
-    opacity: .4;
-  }
-
-  50% {
-    -webkit-transform: translateY(3px);
-    transform: translateY(3px);
-    opacity: 1;
-  }
-
-  100% {
-    -webkit-transform: translateY(6px);
-    transform: translateY(6px);
-    opacity: .4;
-  }
-}
-
-@keyframes hover-shadow {
-  0% {
-    -webkit-transform: translateY(6px);
-    -ms-transform: translateY(6px);
-    transform: translateY(6px);
-    opacity: .4;
-  }
-
-  50% {
-    -webkit-transform: translateY(3px);
-    -ms-transform: translateY(3px);
-    transform: translateY(3px);
-    opacity: 1;
-  }
-
-  100% {
-    -webkit-transform: translateY(6px);
-    -ms-transform: translateY(6px);
-    transform: translateY(6px);
-    opacity: .4;
-  }
-}
-
-@-webkit-keyframes hover {
-  50% {
-    -webkit-transform: translateY(-3px);
-    transform: translateY(-3px);
-  }
-
-  100% {
-    -webkit-transform: translateY(-6px);
-    transform: translateY(-6px);
-  }
-}
-
-@keyframes hover {
-  50% {
-    -webkit-transform: translateY(-3px);
-    -ms-transform: translateY(-3px);
-    transform: translateY(-3px);
-  }
-
-  100% {
-    -webkit-transform: translateY(-6px);
-    -ms-transform: translateY(-6px);
-    transform: translateY(-6px);
-  }
+	&.pink{
+		color: $grey;
+		border-color: $pink;
+		&:hover{
+			color: #fff;
+			background-color: $pink;
+		}
+	}
 }

@@ -19,22 +19,6 @@
 		&:focus{ outline: 0; border-color: #ac92ec; }
 	}
 	textarea{ height: 140px !important; }
-	button{
-		float: left;
-		padding: 10px 20px;
-		background-color: darken($purple, 10%);
-		border: 0;
-		color: #fff;
-		font-family: 'Roboto Condensed', sans-serif;
-		font-size: 16px;
-		font-weight: 100;
-		cursor: pointer;
-		transition: 0.3s;
-		&:hover{
-			color: #fff;
-			background-color: $purple;
-		}
-	}
 }
 
 .contact-info{
