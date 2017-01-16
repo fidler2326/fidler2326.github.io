@@ -35,7 +35,7 @@ body{
 	width: auto;
 	padding: 50px;
 	&.alt{
-		background-color: $greyLight; 
+		background-color: $greyLight;
 	}
 	@media(max-width: $tabletPortrait){
 		padding: 20px;
@@ -118,6 +118,7 @@ body{
 	flex-wrap: wrap;
 	width: 100%;
 	.unit{
+		&.alt a{ color: $grey; }
 		a{
 			display: flex;
 			flex-direction: column;

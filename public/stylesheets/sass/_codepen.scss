@@ -12,8 +12,6 @@
 	}
 }
 
-/*flexbox layout*/
-
 .eqWrap {
 	display: flex;
 }
@@ -27,6 +25,36 @@
 	// width: 25%;
 	&.eq {
 		padding: 30px;
+		position: relative;
+		&:before,&:after{
+			content: '';
+			background-color: $grey;
+			position: absolute;
+			z-index: 3;
+		}
+		&:before{
+			width: 1px; height: 12px;
+			bottom: -6px; right: 0;
+		}
+		&:after{
+			width: 12px; height: 1px;
+			bottom: 0; right: -6px;
+		}
+		&:nth-child(4),&:nth-child(8),&:nth-child(9),&:nth-child(10),
+		&:nth-child(11),&:nth-child(12){
+			&:before,&:after{ display: none; }
+		}
+		@media(max-width: $tabletPortrait){
+			&:nth-child(odd){
+				&:before,&:after{ display: block; }
+			}
+			&:nth-child(even),&:nth-child(11){
+				&:before,&:after{ display: none; }
+			}
+		}
+		@media(max-width: $mobileLarge){
+			&:before,&:after{ display: none !important; }
+		}
 	}
 	a.title{
 		float: left;
