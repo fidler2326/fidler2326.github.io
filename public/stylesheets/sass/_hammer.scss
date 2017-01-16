@@ -38,14 +38,14 @@
       -webkit-transform: translate3d(0,0,0);
       &.pane{
         width: 100%;
-        // margin: 20px 0 0 0;
-        // padding: 20px 0 0 0;
-        // border-bottom: 1px solid #ddd;
         padding: 50px 0;
         position: relative;
         &:first-of-type,&:last-of-type{ margin: 0; padding: 0; }
         &:nth-child(even){
           background-color: #fff;
+        }
+        @media(max-width: $mobileLarge){
+          background-color: #fff !important;
         }
       }
     }
@@ -59,30 +59,28 @@
     padding: 20px 0;
     text-align: center;
   }
-  .hammer-container{
-    padding: 0 0 5px 0 !important;
-  }
-  .left, .right{
-    float: left !important;
-    width: 100% !important;
-    padding: 0 !important;
-  }
+  // .hammer-container{
+  //   padding: 0 0 5px 0 !important;
+  // }
+  // .left, .right{
+  //   display: block !important;
+  //   float: left !important;
+  //   width: 100% !important;
+  //   padding: 0 !important;
+  // }
+  .unit{ display: block; }
   .fixed-nav{
     width: 100% !important;
     position: static !important;
   }
-  .left{
-    position: relative;
-    z-index: 2;
-  }
   .right{
-    min-height: initial !important;
-    height: auto !important;
-    padding: 55px 0 0 0;
+    // min-height: initial !important;
+    // height: auto !important;
+    // padding: 55px 0 0 0;
     margin-bottom: -55px !important;
     position: relative;
     top: -55px;
-    z-index: 1;
+    // z-index: 1;;
     .inner{
       // padding: 70px 10px 0 10px;
     }
@@ -96,8 +94,9 @@
     // Tab top bar colours
     &.pane{
       border-bottom: 0;
+      padding: 70px 0 0 0 !important;
       .inner{
-        padding-bottom: 10px;
+        // padding-bottom: 55px;
       }
       &:before{
         content: '';
@@ -107,21 +106,11 @@
         top: 0;
         left: 0;
       }
-      &:nth-child(1):before{
-        background-color: $green;
-      }
-      &:nth-child(2):before{
-        background-color: $pink;
-      }
-      &:nth-child(3):before{
-        background-color: $blue;
-      }
-      &:nth-child(4):before{
-        background-color: $yellow;
-      }
-      &:nth-child(5):before{
-        background-color: $purple;
-      }
+      &:nth-child(1):before{ background-color: $green; }
+      &:nth-child(2):before{ background-color: $pink; }
+      &:nth-child(3):before{ background-color: $blue; }
+      &:nth-child(4):before{ background-color: $yellow; }
+      &:nth-child(5):before{ background-color: $purple; }
     }
   }
 }

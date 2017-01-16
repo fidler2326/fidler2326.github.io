@@ -1613,14 +1613,18 @@ function Carousel(element)
        };
 
        function mySuperAmazingFunctionToAddClassToTheCurrentPaneAndAjustTheHeightOfThePane() {
-         $('li.pane').eq(current_pane).addClass('active');
+        //  setTimeout( function() {
+            $('li.pane').eq(current_pane).addClass('active');
 
-         var paneHeight = $('li.pane').eq(current_pane).height();
-        //  console.log(paneHeight);
-         $('#carousel ul.mobile').css('max-height', paneHeight);
+            var paneHeight = $('li.pane').eq(current_pane).height() + 70;
+           //  console.log(paneHeight);
+            $('#carousel ul.mobile').css('max-height', paneHeight);
 
-         $('ul.main li a').removeClass('active');
-         $('ul.main li a').eq(current_pane).addClass('active');
+            $('ul.main li a').removeClass('active');
+            $('ul.main li a').eq(current_pane).addClass('active');
+            console.log(paneHeight);
+          // }, 2000);
+
        }
 
        $(window).resize(function() {

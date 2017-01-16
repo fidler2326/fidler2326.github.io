@@ -165,7 +165,6 @@ function getSkill() {
   if(count < skills.length) {
     var selected = skills[count];
     var randomClass = animateClass[Math.floor(Math.random()*animateClass.length)];
-    console.log(randomClass);
     $('#skills').attr('class', '');
     $('#skills').addClass(randomClass);
     $('#skills').html(selected);
