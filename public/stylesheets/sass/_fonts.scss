@@ -183,25 +183,3 @@ address p{
 	font-size: 17px;
 	font-weight: 400 !important;
 }
-
-.label{
-  padding: 3px 6px;
-  background-color: #ac92ec;
-  position: absolute;
-  top: 0; left: 50%;
-  z-index: 9;
-  transform: translate(-50%,-50%);
-  text-align: center;
-  h2{
-    margin: 0; padding: 0;
-    border: 0 !important;
-    color: #fff;
-    font-size: 16px;
-  }
-  h3{
-    margin: 0;
-    color: #fff;
-    font-size: 12px;
-  }
-  a{ color: #fff; }
-}

@@ -22,7 +22,6 @@
 }
 
 .equalHMR {
-	// width: 25%;
 	&.eq {
 		padding: 30px;
 		position: relative;
@@ -40,8 +39,7 @@
 			width: 12px; height: 1px;
 			bottom: 0; right: -6px;
 		}
-		&:nth-child(4),&:nth-child(8),&:nth-child(9),&:nth-child(10),
-		&:nth-child(11),&:nth-child(12){
+		&:nth-child(4),&:nth-child(8),&:nth-child(9),&:nth-child(10),&:nth-child(11),&:nth-child(12){
 			&:before,&:after{ display: none; }
 		}
 		@media(max-width: $tabletPortrait){
@@ -64,6 +62,7 @@
 		font-weight: 300;
 		margin-bottom: 10px;
 	}
+	a{ align-self: flex-start; }
 }
 
 .eq:nth-of-type(1) { background-color: darken(#f5f5f5,1%); }
