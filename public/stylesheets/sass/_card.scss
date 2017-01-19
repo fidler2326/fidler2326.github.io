@@ -40,6 +40,9 @@
       }
     }
     .bottom{
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
       padding: 15px;
       .footer{
         border-top: 1px dotted #ddd;
@@ -54,14 +57,18 @@
     }
     h3{
       display: block;
-      margin: 0 0 20px 0;
+      margin: 0 0 10px 0;
       font-family: 'Oswald Light', sans-serif;
       font-size: 22px;
       font-weight: 100;
       font-style: normal;
     }
-    .link{
-      font-family: 'Roboto Condensed', sans-serif;
+    p{
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
     }
+    .link{ font-family: 'Roboto Condensed', sans-serif; }
+    .label{ margin: 0 5px 5px 0; }
   }
 }
