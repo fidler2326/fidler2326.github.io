@@ -11,36 +11,51 @@
 	text-transform: uppercase;
 	text-decoration: none;
 	letter-spacing: 1px;
+	position: relative;
+	z-index: 1;
 	cursor: pointer;
+	overflow: hidden;
+	transition: 0.4s ease;
+	&:after{
+		content: '';
+		width: 0; height: 0;
+		border-radius: 100%;
+		background-color: #fff;
+		position: absolute;
+		z-index: -1;
+		top: 50%; left: 50%;
+		transform: translate(-50%,-50%);
+		transition: 0.4s ease;
+	}
 	&:hover{
+		color: $grey;
 		text-decoration: none;
+		&:after{
+			width: 150px; height: 150px;
+		}
 	}
 	&.dark{
 		color: $grey;
 		border-color: $grey;
+		&:after{ background-color: $grey; }
+		&:hover{ color: #fff; }
 	}
 	&.purple{
 		color: $grey;
 		border-color: $purple;
-		&:hover{
-			color: #fff;
-			background-color: $purple;
-		}
+		&:after{ background-color: $purple; }
+		&:hover{ color: #fff; }
 	}
 	&.yellow{
 		color: $grey;
 		border-color: $yellow;
-		&:hover{
-			color: #fff;
-			background-color: $yellow;
-		}
+		&:after{ background-color: $yellow; }
+		&:hover{ color: #fff; }
 	}
 	&.pink{
 		color: $grey;
 		border-color: $pink;
-		&:hover{
-			color: #fff;
-			background-color: $pink;
-		}
+		&:after{ background-color: $pink; }
+		&:hover{ color: #fff; }
 	}
 }

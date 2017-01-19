@@ -54,6 +54,10 @@
       box-shadow: 0 30px 30px rgba(0,0,0,.16);
       transform: translate(0,-10px);
       text-decoration: none;
+      .btn{
+        color: #fff;
+        &:after{ width: 150px; height: 150px; }
+      }
     }
     h3{
       display: block;
