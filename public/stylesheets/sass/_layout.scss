@@ -7,8 +7,6 @@ body{
 	}
 }
 
-.clearfix{ clear: both; }
-
 .wrapper{
   float: left;
   width: 100%;
@@ -17,7 +15,6 @@ body{
 .hammer-container{
 	width: 100%;
   max-width: 1280px;
-  // padding: 0 20px;
   margin: 0 auto;
 }
 
@@ -28,11 +25,6 @@ body{
 	@media(max-width: 528px){
 		flex-direction: column;
 	}
-}
-
-.row{
-	display: flex;
-	flex-direction: row;
 }
 
 .unit{
@@ -175,22 +167,17 @@ body{
 		}
 		&:nth-child(1){ background-color: #f0f0f0; }
 		&:nth-child(2){ background-color: #242424; }
-
 		&:nth-child(3){ background-color: #56175a; }
 		&:nth-child(4){ background-color: #18C3A6; }
 		&:nth-child(5){ background-color: #4d7383; }
 		&:nth-child(6){ background-color: #ffa500; }
-
 		&:nth-child(7){ background-color: #212121; }
 		&:nth-child(8){ background-color: #a22c32; }
 		&:nth-child(9){ background-color: #73a853; }
-
 		&:nth-child(10){ background-color: #2980B9; }
 		&:nth-child(11){ background-color: #d0282d; }
 	}
 }
-
-.no-padding{ padding: 0; }
 
 .inner{
 	padding: 0 50px;
