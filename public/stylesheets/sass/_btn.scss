@@ -16,46 +16,51 @@
 	cursor: pointer;
 	overflow: hidden;
 	transition: 0.4s ease;
-	&:after{
+	&:after,&:before{
 		content: '';
-		width: 0; height: 0;
-		border-radius: 100%;
+		width: 0; height: 100%;
 		background-color: #fff;
 		position: absolute;
+		top: 0;
 		z-index: -1;
-		top: 50%; left: 50%;
-		transform: translate(-50%,-50%);
-		transition: 0.4s ease;
+		transition: 0.3s ease;
 	}
+	&:before{ left: 50%; }
+	&:after{ right: 50%; }
 	&:hover{
 		color: $grey;
 		text-decoration: none;
+		&:before{
+			width: 50.1%;
+			left: 0;
+		}
 		&:after{
-			width: 150px; height: 150px;
+			width: 50.1%;
+			right: 0;
 		}
 	}
 	&.dark{
 		color: $grey;
 		border-color: $grey;
-		&:after{ background-color: $grey; }
+		&:before,&:after{ background-color: $grey; }
 		&:hover{ color: #fff; }
 	}
 	&.purple{
 		color: $grey;
 		border-color: $purple;
-		&:after{ background-color: $purple; }
+		&:before,&:after{ background-color: $purple; }
 		&:hover{ color: #fff; }
 	}
 	&.yellow{
 		color: $grey;
 		border-color: $yellow;
-		&:after{ background-color: $yellow; }
+		&:before,&:after{ background-color: $yellow; }
 		&:hover{ color: #fff; }
 	}
 	&.pink{
 		color: $grey;
 		border-color: $pink;
-		&:after{ background-color: $pink; }
+		&:before,&:after{ background-color: $pink; }
 		&:hover{ color: #fff; }
 	}
 }

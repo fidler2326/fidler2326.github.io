@@ -73,8 +73,9 @@
     .link{ font-family: 'Roboto Condensed', sans-serif; }
     .label{ margin: 0 5px 5px 0; }
     .btn{
+      flex-grow: 1;
       text-align: center;
-      margin: 5px 5px 0 5px;
+      margin: 10px 5px 0 5px;
     }
   }
 }
