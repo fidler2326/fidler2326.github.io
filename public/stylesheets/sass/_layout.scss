@@ -160,8 +160,17 @@ body{
 			text-transform: uppercase;
 			text-decoration: none;
 			text-align: center;
-			span{
-
+			&:hover .btn{
+				color: $grey;
+				&.dark{ color: #fff; }
+				&:before{
+					width: 50.1%;
+					left: 0;
+				}
+				&:after{
+					width: 50.1%;
+					right: 0;
+				}
 			}
 		}
 		&:nth-child(1){ background-color: #f0f0f0; }
