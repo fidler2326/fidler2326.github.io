@@ -45,6 +45,8 @@
       flex-grow: 1;
       padding: 15px;
       .footer{
+        display: flex;
+        flex-wrap: wrap;
         border-top: 1px dotted #ddd;
         margin: 20px 0 0 0;
         padding: 5px 0;
@@ -54,10 +56,6 @@
       box-shadow: 0 30px 30px rgba(0,0,0,.16);
       transform: translate(0,-10px);
       text-decoration: none;
-      .btn{
-        color: #fff;
-        &:after{ width: 150px; height: 150px; }
-      }
     }
     h3{
       display: block;
@@ -74,5 +72,9 @@
     }
     .link{ font-family: 'Roboto Condensed', sans-serif; }
     .label{ margin: 0 5px 5px 0; }
+    .btn{
+      text-align: center;
+      margin: 5px 5px 0 5px;
+    }
   }
 }
