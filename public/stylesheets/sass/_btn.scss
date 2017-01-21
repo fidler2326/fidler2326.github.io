@@ -25,8 +25,8 @@
 		z-index: -1;
 		transition: 0.3s ease;
 	}
-	&:before{ left: 50%; }
-	&:after{ right: 50%; }
+	&:before{ left: 50.1%; }
+	&:after{ right: 50.1%; }
 	&:hover{
 		color: $grey;
 		text-decoration: none;
