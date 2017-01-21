@@ -3,6 +3,14 @@
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
+  &.come-in,&.already-visible{
+    @media(min-width: $mobileLarge){
+      .card-container{
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
 }
 
 .card-container{
@@ -10,6 +18,14 @@
   width: 31%;
   padding: 0 0 20px 0;
   background-color: #fff;
+  transition: 0.8s ease;
+  @media(min-width: $mobileLarge){
+    transform: translateY(200px);
+    opacity: 0;
+    @for $i from 1 to 4 {
+      &:nth-of-type(#{$i}) { transition-delay: $i * 0.2s; }
+    }
+  }
   @media(max-width: 868px){
     width: 100%;
   }

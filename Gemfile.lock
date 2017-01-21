@@ -2,8 +2,8 @@ GEM
   remote: https://rubygems.org/
   specs:
     daemons (1.2.4)
-    eventmachine (1.2.0.1)
-    eventmachine (1.2.0.1-x86-mingw32)
+    eventmachine (1.2.1)
+    eventmachine (1.2.1-x86-mingw32)
     heroku-deflater (0.6.2)
       rack (>= 1.4.5)
     mail (2.6.4)
@@ -13,7 +13,7 @@ GEM
     mime-types-data (3.2016.0521)
     pony (1.11)
       mail (>= 2.0)
-    rack (1.6.4)
+    rack (1.6.5)
     rack-protection (1.5.3)
       rack
     sass (3.2.1)
